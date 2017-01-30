@@ -1,0 +1,188 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: roboto, sans-serif;
+	color: #222;
+	background: #f7f5f0;
+}
+/*
+h1{
+	background-color: blue;
+	}
+	*/
+.main-nav{
+	width: 100%;
+	background: black;
+	min-height: 10	0px;
+	padding: 20px;
+	position: fixed;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: #0499ff;
+}
+
+a:hover{
+	color:#6633ff;
+}
+	
+/*makes nav stick top right with spacing*/
+	.nav{
+display: flex;
+justify-content: space-around;
+font-weight: 700;
+list-style-type: none;
+margin: 0 auto;
+padding: 0;
+}
+.nav .name{
+	display: none;
+}
+
+.nav li{
+	padding: 5px 10px 10px 10px;
+}
+.nav a{
+	transition: all .5s;
+}
+.nav a:hover{
+color: white
+}
+
+/*circular picture that spins*/
+header {
+	text-align: center;
+	background: url('https://cdn.pixabay.com/photo/2016/11/22/23/14/equipment-1851112_960_720.jpg') no-repeat top center;
+	background-size: cover;
+	overflow: hidden;
+	padding-top: 60px;
+}
+/*size of middle large pic across the screen */
+header{
+	line-height: 1.5;
+}
+header .profile-image{
+	margin-top: 50px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 3px solid white;
+	transition: all .5s;
+}
+header .profile-image:hover{
+	transform: scale(1.2) rotate(720deg);
+}
+.tag{
+	background-color: #efefef;
+	color: purple;
+	padding: 10px;
+	border-radius: 5px;
+	display: table;
+	margin: 10px auto;
+}
+.location{
+	background-color: #222;
+	color: yellow;
+}
+.card
+margin: 30px;
+padding: 20px 40px 40px;
+max-width: 500px;
+text-align: left;
+background: #fff;
+border-bottom: 4px solid #ccc;
+border-radius: 6px;
+}
+.card:hover{
+	border-color: #ff99ff;
+}
+ul.skills{
+	padding: 0;
+	text-align:center;
+}
+.skills li{
+	border-radius: 6px;
+	display: inline-block;
+	background: #ff9904;
+	color: white;
+	padding: 5px 10px;
+	margin: 2px;
+}
+.skills li:nth-child(odd){
+	background: #0399ff;
+}
+[class*='col-']{
+	float: left;
+}
+
+.col-1-2{
+	width: 70%;
+	margin: auto;
+}
+.col-2-2{
+	
+	width: 30%;
+	margin: auto;
+}
+
+footer {
+	width: 100%;
+	min-height: 30px;
+	padding: 20px 0 40px 20px;
+
+ul .pg2{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+	background-color:lightblue;
+}
+	
+
+/*added below to stick footer to bottom
+   position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+	background-color:lightblue;
+}*/
+footer .copyright {
+	display: none;
+	top: -8px;
+	margin-right: 20px;
+	font-size: 150.em;	
+}
+footer{
+	display: none;
+}
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+footer ul li{
+	list-style-type: none;
+	display: none;
+}
+a.social{
+	display: inline-block;
+	text-indent: -9999px;
+	margin-left: 5px;
+	width: 30px;
+	height: 30px;
+	background-size: 30px 30px;
+	opacity: .5;
+	transition: all .25s;
+}
+.clearfix {
+	clear: both;
+}
